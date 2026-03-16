@@ -1,7 +1,17 @@
+import Hero from "@/components/home/Hero";
+import TrustStrip from "@/components/home/TrustStrip";
+import AboutPreview from "@/components/home/AboutPreview";
+import ProductsPreview from "@/components/home/ProductsPreview";
+import CTABanner from "@/components/home/CTABanner";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <h1 className="text-3xl font-bold text-primary">Delta Life Insurance</h1>
-    </main>
+    <>
+      <Hero />
+      <TrustStrip />
+      <AboutPreview />
+      <ProductsPreview />
+      <CTABanner />
+    </>
   );
 }
