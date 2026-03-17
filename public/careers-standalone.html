@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Delta Life and Delta Fire and Casualty</title>
+<style type="text/css">
+
+/* ===== RESET & BASE ===== */
+body {
+	padding: 0;
+	color: #484848;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.7;
+	background-color: #f0f0f0;
+	margin: 10px 0 0 0;
+}
+
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+a img {
+	border: none;
+}
+
+a:link {
+	color: #414958;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 24px;
+	color: #999999;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+	max-width: 960px;
+	min-width: 780px;
+	background-color: #FFF;
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+/* ===== HEADER ===== */
+.header {
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 90px;
+	background-color: #004990;
+}
+
+.logo {
+	line-height: 87px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 87px;
+	width: 520px;
+	background-color: #004990;
+	padding-left: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	display: none;
+}
+
+.logo a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+
+.logo a::before {
+	content: "Delta Life Insurance Company";
+}
+
+/* ===== NAVIGATION ===== */
+.nav_menu {
+	position: relative;
+	z-index: 1000;
+	background-color: #003366;
+	margin: 0;
+	padding: 0 0 0 0;
+	clear: both;
+}
+
+.nav_menu .dropmenu {
+	height: 28px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.nav_menu ul.dropmenu li {
+	height: 28px;
+	display: flex;
+	align-items: center;
+}
+
+.nav_menu ul.dropmenu li:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav_menu ul.dropmenu li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 0 20px;
+	line-height: 28px;
+	font-weight: bold;
+	font-size: 13px;
+	display: block;
+}
+
+/* Highlight the Careers tab */
+.nav_menu ul.dropmenu li a[href="careers.html"] {
+	color: #f7ad0b;
+}
+
+/* ===== BANNER ===== */
+.banner3 {
+	float: left;
+	height: 240px;
+	width: 100%;
+	background-color: #2a5f8f;
+	background: linear-gradient(135deg, #004990 0%, #2a7ac0 50%, #004990 100%);
+	position: relative;
+}
+
+.banner3::after {
+	content: "Careers at Delta Life";
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* ===== CONTENT (left column) ===== */
+.content {
+	float: left;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 710px;
+}
+
+.container .content p {
+	line-height: 16px;
+}
+
+.content ul, .content ol {
+	padding: 0 15px 15px 40px;
+}
+
+/* ===== SIDEBAR2 (right column) ===== */
+.sidebar2 {
+	float: right;
+	width: 240px;
+	background-color: #ffffff;
+	padding-bottom: 10px;
+	clear: none;
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding-top: 3px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #666;
+}
+
+.sidebar2 h1 {
+	border-bottom: 2px solid #e0e0e0;
+	padding-bottom: 8px;
+	margin-bottom: 10px;
+}
+
+.sidebar2 ul {
+	list-style-type: disc;
+	line-height: 18px;
+}
+
+.sidebar2 ul li {
+	margin-bottom: 8px;
+}
+
+.sidebar2 img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+	padding: 10px 0;
+	background-color: #004990;
+	position: relative;
+	clear: both;
+}
+
+.container .footer p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFF;
+}
+
+.footer a {
+	color: #ffffff !important;
+}
+
+/* ===== BULLET IMAGES ===== */
+.content img[src*="bullet"] {
+	width: 10px;
+	height: 10px;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+
+/* ===== BROCHURE IMAGE ===== */
+.content h1 img {
+	margin-left: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media only screen and (max-width: 960px) {
+	div.feature { display: none; }
+	div.sidebar1 { display: none; }
+
+	.content {
+		width: 100%;
+		float: none;
+	}
+
+	.sidebar2 {
+		width: 100%;
+		float: none;
+		padding: 10px;
+	}
+
+	.container {
+		min-width: auto;
+	}
+
+	.banner3 {
+		height: 180px;
+	}
+
+	.banner3::after {
+		font-size: 28px;
+		bottom: 20px;
+		left: 20px;
+	}
+}
+
+@media only screen and (max-width: 510px) {
+	div.feature { display: none; }
+	div.sidebar1 { display: none; }
+
+	.logo {
+		width: 100%;
+	}
+
+	.nav_menu .dropmenu {
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.nav_menu ul.dropmenu li {
+		height: auto;
+	}
+
+	.nav_menu ul.dropmenu li a {
+		padding: 8px 15px;
+		line-height: normal;
+	}
+
+	.banner3 {
+		height: 140px;
+	}
+
+	.banner3::after {
+		font-size: 22px;
+		bottom: 15px;
+		left: 15px;
+	}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="logo"><a href="http://www.delta-life.com"></a></div>
+  <!-- end .header --></div>
+
+  <!-----//////NAVIGATION MENU\\\\\---------->
+    <div class="nav_menu">
+			<ul class="dropmenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Our Services</a></li>
+				<li><a href="careers.html">Careers</a></li><li><a href="locations.html">District Offices</a></li>
+				<li><a href="leadership.html">Our Leadership</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+	</div>
+ <!-----//////END NAVIGATION MENU\\\\\---------->
+
+  <div class="banner3"></div>
+
+     <div class="content">
+    <h1>Careers<a href="brochures/DLCareers-web.pdf" download="DLCareers-web.pdf"><img src="images/careers_brochure.png" width="200" height="266" alt="Careers Brochure" align="right" border="0"/></a></h1>
+    <p style="color:#4982c1; font-size:18px;"> The Delta Life Opportunity</p>
+    <p>For the right person, we provide the following opportunities:    </p>
+    <p style="font-size:12px; line-height:14px;">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" width="14" height="14"/>To establish a successful and prestigious career. </p>
+    <p style="font-size:12px; ">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" alt="" width="14" height="14"/>To build a secure future for yourself and your loved ones.    </p>
+    <p style="font-size:12px; ">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" alt="" width="14" height="14"/>To achieve your full potential.</p>
+    <p  style="font-size:12px; ">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" alt="" width="14" height="14"/>To build relationships with other professionals and with those you serve.</p>
+    <p style="font-size:12px; ">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" alt="" width="14" height="14"/>To help individuals and families attain peace of mind, prepare for the <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unexpected and secure their future. Our products include life, <br />
+
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;health and property insurance. </p>
+    <p style="color:#4982c1;">Qualities we seek:</p>
+    <p >Candidates who are likely to succeed will possess:</p>
+    <p style="font-size:12px;">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" width="14" height="14"/>Integrity.</p>
+    <p style="font-size:12px;">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" alt="" width="14" height="14"/>Willingness to commit the time necessary
+to build a successful operation.</p>
+    <p style="font-size:12px;">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" alt="" width="14" height="14"/>A goal-oriented mindset.</p>
+
+    <p >Candidates will able to:</p>
+    <p style="font-size:12px;">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" width="14" height="14"/>Work without close supervision.</p>
+    <p style="font-size:12px;">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" alt="" width="14" height="14"/>Express themselves effectively.</p>
+    <p style="font-size:12px;">&nbsp;&nbsp;&nbsp;<img src="images/bullet.png" alt="" width="14" height="14"/>Keep going when faced with adversity.</p>
+    <p style="color:#4982c1;">Next Steps:</p>
+    <p >If this sounds like the right job for you, you should complete: </p>
+    <p style="font-size:12px;">&nbsp;&nbsp;&nbsp;
+		<img src="images/bullet.png" width="14" height="14"/>an
+		<a href="Employment_Application.pdf" download="Employment_Application.pdf">employment application</a><br>
+    &nbsp;&nbsp;&nbsp;
+	<img src="images/bullet.png" width="14" height="14"/>a career profile assessment to measure your potential for success as an agent</p>
+    <p style="font-size:12px;">We will then conduct an in-depth interview and obtain a credit and motor vehicle report. Finally, just prior to employment, all applicants are asked to take a drug-screening test and pass a criminal background check.</p>
+     </div>
+  <div class="sidebar2">
+    <h1 style="color:#4982c1; font-size:16px; padding-left:0px;">Working with Delta Life</h1>
+    <div>
+      <div>
+        <span style="color:#4982c1">Training and Support</span>
+
+        <ul style="font-size:12px; padding-left:12px; padding-right:4px;">
+        <li>All Delta Life agents are assigned to a manager who provides training, direction and support. </li>
+        <li>After assignment to an agency, new agents receive five full weeks of intensive, one-on-one training administered by their manager.</li>
+        <li>Managers are vitally interested in the success of new agents and generously devote whatever time is necessary to their success.</li>
+        <li>Training and sales materials are furnished without charge.</li>
+        <li>Agents who report to a district or detached office may also have assigned office space and phone access. </li>
+        <li>Extensive on-the-job training allows new agents to earn a paycheck while learning their profession.</li>
+        </ul>
+          <br />
+          <span style="color:#4982c1">Rewards and Recognition</span><br />
+          <span style="color:#666666; font-size:12px;">The opportunity to become a Delta Life agent is an opportunity to build a better life. Delta Life offers</span>:
+
+          <ul style="font-size:12px; padding-left:12px; padding-right:4px;">
+        <li>Pay for Performance</li>
+        <li>Flexible Work Hours</li>
+        <li>Job Stability</li>
+        <li>President's Club qualifiers earn trips for themselves and their spouses to exciting vacation spots such as Aruba, Cozumel, Las Vegas, New Orleans, New York, and San Francisco.<br />
+          <img src="images/beach.jpg"  />        </li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+  <div class="footer">
+    <p align="center"><a style="color:#ffffff;" href="privacy.html">Privacy Policy</a> |<a style="color:#ffffff;" href="terms.html"> Terms and Conditions</a> | &copy; 2012 Delta Life Insurance Company
+</p>
+</div>
+</div>
+</body>
+</html>
