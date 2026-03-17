@@ -21,13 +21,15 @@ interface Office {
 // Static office data for initial render (matches Supabase seed data)
 const offices: Office[] = [
   { id: "1", name: "Albany Office", city: "Albany", address: "2101 Dawson Rd", full_address: "2101 Dawson Rd, Albany, GA 31707", phone1: "(229) 439-7021", phone2: null, latitude: 31.602, longitude: -84.184, image_url: "/assets/offices/albany.jpg", is_hq: false },
-  { id: "2", name: "Atlanta Office", city: "Atlanta", address: "4370 Peachtree Rd NE Ste 500", full_address: "4370 Peachtree Rd NE Ste 500, Atlanta, GA 30319", phone1: "404-231-2111", phone2: null, latitude: 33.8485, longitude: -84.3635, image_url: "/assets/offices/atlanta.jpg", is_hq: true },
-  { id: "3", name: "Augusta Office", city: "Augusta", address: "1212 West Medical Park Rd", full_address: "1212 West Medical Park Rd, Augusta, GA 30909", phone1: "(706) 798-3244", phone2: null, latitude: 33.455, longitude: -82.046, image_url: "/assets/offices/augusta.jpg", is_hq: false },
-  { id: "4", name: "Douglas Office", city: "Douglas", address: "810 North Madison Ave", full_address: "810 North Madison Ave, Douglas, GA 31533", phone1: "(912) 384-3932", phone2: null, latitude: 31.509, longitude: -82.851, image_url: "/assets/offices/douglas.jpg", is_hq: false },
-  { id: "5", name: "Dublin Office", city: "Dublin", address: "120 Oak Street", full_address: "120 Oak Street, Dublin, GA 31021", phone1: "(478) 272-1312", phone2: null, latitude: 32.539, longitude: -82.923, image_url: "/assets/offices/dublin.jpg", is_hq: false },
-  { id: "6", name: "Macon Office", city: "Macon", address: "1314 Hardeman Ave", full_address: "1314 Hardeman Ave, Macon, GA 31201", phone1: "(478) 745-7961", phone2: null, latitude: 32.846, longitude: -83.652, image_url: "/assets/offices/macon.jpg", is_hq: false },
-  { id: "7", name: "Savannah Office", city: "Savannah", address: "2231 E Victory Dr", full_address: "2231 E Victory Dr, Savannah, GA 31414", phone1: "(912) 354-0996", phone2: null, latitude: 32.041, longitude: -81.066, image_url: "/assets/offices/savannah.jpg", is_hq: false },
-  { id: "8", name: "Thomasville Office", city: "Thomasville", address: "444 E Jackson St", full_address: "444 E Jackson St, Thomasville, GA 31792", phone1: "(229) 226-9390", phone2: null, latitude: 30.835, longitude: -83.98, image_url: "/assets/offices/thomasville.jpg", is_hq: false },
+  { id: "2", name: "Athens Office", city: "Athens", address: "2500 W Broad St Suite 501", full_address: "2500 W Broad St Suite 501, Athens, GA 30606", phone1: "(706) 369-8032", phone2: "(800) 982-8321", latitude: 33.961, longitude: -83.378, image_url: "/assets/offices/athens2.png", is_hq: false },
+  { id: "3", name: "Atlanta Office", city: "Atlanta", address: "4370 Peachtree Rd NE Ste 500", full_address: "4370 Peachtree Rd NE Ste 500, Atlanta, GA 30319", phone1: "404-231-2111", phone2: null, latitude: 33.8485, longitude: -84.3635, image_url: "/assets/offices/atlanta.jpg", is_hq: true },
+  { id: "4", name: "Augusta Office", city: "Augusta", address: "1212 West Medical Park Rd", full_address: "1212 West Medical Park Rd, Augusta, GA 30909", phone1: "(706) 798-3244", phone2: null, latitude: 33.455, longitude: -82.046, image_url: "/assets/offices/augusta.jpg", is_hq: false },
+  { id: "5", name: "Brunswick Office", city: "Brunswick", address: "3303 Norwich St", full_address: "3303 Norwich St, Brunswick, GA 31502", phone1: "(912) 265-0318", phone2: "(800) 675-0318", latitude: 31.155, longitude: -81.492, image_url: "/assets/offices/brunswick_building_only.png", is_hq: false },
+  { id: "6", name: "Douglas Office", city: "Douglas", address: "810 North Madison Ave", full_address: "810 North Madison Ave, Douglas, GA 31533", phone1: "(912) 384-3932", phone2: null, latitude: 31.509, longitude: -82.851, image_url: "/assets/offices/douglas.jpg", is_hq: false },
+  { id: "7", name: "Dublin Office", city: "Dublin", address: "120 Oak Street", full_address: "120 Oak Street, Dublin, GA 31021", phone1: "(478) 272-1312", phone2: null, latitude: 32.539, longitude: -82.923, image_url: "/assets/offices/dublin.jpg", is_hq: false },
+  { id: "8", name: "Macon Office", city: "Macon", address: "1314 Hardeman Ave", full_address: "1314 Hardeman Ave, Macon, GA 31201", phone1: "(478) 745-7961", phone2: null, latitude: 32.846, longitude: -83.652, image_url: "/assets/offices/macon.jpg", is_hq: false },
+  { id: "9", name: "Savannah Office", city: "Savannah", address: "2231 E Victory Dr", full_address: "2231 E Victory Dr, Savannah, GA 31414", phone1: "(912) 354-0996", phone2: null, latitude: 32.041, longitude: -81.066, image_url: "/assets/offices/savannah.jpg", is_hq: false },
+  { id: "10", name: "Thomasville Office", city: "Thomasville", address: "444 E Jackson St", full_address: "444 E Jackson St, Thomasville, GA 31792", phone1: "(229) 226-9390", phone2: null, latitude: 30.835, longitude: -83.98, image_url: "/assets/offices/thomasville.jpg", is_hq: false },
 ];
 
 export default function DistrictOfficesPage() {
@@ -88,7 +90,7 @@ export default function DistrictOfficesPage() {
         <div className="absolute inset-0 bg-primary" />
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-white">Our District Offices</h1>
-          <p className="text-lg text-white/90 mt-2">8 offices serving families across Georgia</p>
+          <p className="text-lg text-white/90 mt-2">10 offices serving families across Georgia</p>
         </div>
       </section>
 
@@ -153,6 +155,14 @@ export default function DistrictOfficesPage() {
                   {selectedOffice.phone1}
                 </a>
               </div>
+              {selectedOffice.phone2 && (
+                <div className="flex items-center gap-3">
+                  <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                  <a href={`tel:${selectedOffice.phone2.replace(/\D/g, "")}`} className="text-foreground hover:text-secondary transition-colors">
+                    {selectedOffice.phone2}
+                  </a>
+                </div>
+              )}
             </CardContent>
           </Card>
         </div>
