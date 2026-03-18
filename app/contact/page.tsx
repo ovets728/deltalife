@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -62,14 +62,6 @@ export default function ContactPage() {
                     <p className="text-muted-foreground">4370 Peachtree Rd NE, Ste 500</p>
                     <p className="text-muted-foreground">Atlanta, GA 30319</p>
                   </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a href="tel:4042312111" className="text-muted-foreground hover:text-secondary transition-colors">404-231-2111</a>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a href="mailto:claims@delta-life.com" className="text-muted-foreground hover:text-secondary transition-colors">claims@delta-life.com</a>
                 </div>
               </div>
 

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
@@ -6,11 +8,22 @@ export default function Hero() {
   return (
     <section className="relative h-[550px] md:h-[600px] flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src="/assets/stock/family-home.jpg"
-          alt="Family in front of their Georgia home"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/assets/stock/family-home.jpg"
           className="w-full h-full object-cover"
-        />
+        >
+          <source src="/assets/videos/family-portrait.mov" type="video/quicktime" />
+          <source src="/assets/videos/family-portrait.mov" type="video/mp4" />
+          <img
+            src="/assets/stock/family-home.jpg"
+            alt="Family in front of their Georgia home"
+            className="w-full h-full object-cover"
+          />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/70 to-primary/40" />
       </div>
 

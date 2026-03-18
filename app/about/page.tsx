@@ -71,6 +71,15 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
+
+          <div className="max-w-4xl mx-auto mt-8">
+            <div className="bg-muted rounded-lg p-8">
+              <h2 className="text-2xl font-bold text-foreground mb-4">Our Vision</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                To be Georgia&apos;s most trusted home service insurance provider — known for personal relationships, unwavering integrity, and a commitment to protecting modest-income families for generations to come.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

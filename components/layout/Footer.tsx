@@ -11,16 +11,6 @@ export default function Footer() {
             <div className="space-y-1 text-sm text-primary-foreground/80">
               <p>4370 Peachtree Rd NE, Ste 500</p>
               <p>Atlanta, GA 30319</p>
-              <p className="pt-2">
-                <a href="tel:4042312111" className="hover:text-secondary transition-colors">
-                  404-231-2111
-                </a>
-              </p>
-              <p>
-                <a href="mailto:claims@delta-life.com" className="hover:text-secondary transition-colors">
-                  claims@delta-life.com
-                </a>
-              </p>
             </div>
           </div>
 
